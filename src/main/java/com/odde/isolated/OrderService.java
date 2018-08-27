@@ -24,11 +24,11 @@ public class OrderService {
         }
     }
 
-    private BookDao getBookDao() {
+    protected BookDao getBookDao() {
         return new BookDao();
     }
 
-    private List<Order> getOrders()
+    protected List<Order> getOrders()
     {
         // parse csv file to get orders
         List<Order> result = new ArrayList<>();
